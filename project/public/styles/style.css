@@ -1,0 +1,174 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:700);
+
+/* ------------------------- */
+
+input.field {
+	height: 1.7em;
+	float: left;
+	margin: 8px;
+	padding: 8px;
+  border-radius: 4px;
+  border: solid 2px rgba(255, 255, 255, .4);
+	text-align: center;
+	color: white;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input.field:focus{
+	border: solid 2px #fff;
+  background-color: rgba(255, 255, 255, .4);
+  box-shadow: 0 0 10px #fff;
+}
+
+/* --------------------------- */
+
+body
+{
+
+	counter-reset: boxes sections;
+  font: 14px 'Droid Sans', sans-serif;
+	color: white;
+  background-color: #3f4b58;
+}
+
+a.button.counter {
+  counter-increment: boxes;
+}
+
+a.button.counter::before {
+  content: 'Box #' counter(boxes);
+}
+
+section.counter {
+	counter-increment: sections;
+}
+
+section.counter::before {
+  content: 'Секция ' counter(sections);
+}
+
+section.counter {
+	margin-bottom: 16px;
+	padding: 16px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, .1);
+}
+
+section.counter::before {
+	display: block;
+	margin: 0 0 8px 8px;
+}
+
+.button{
+	float: left;
+	margin: 8px;
+	padding: 8px;
+  border-radius: 4px;
+  border: solid 2px rgba(255, 255, 255, .4);
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 255, 255, .2);
+	transition: .1s;
+}
+
+.button:hover {
+  border: solid 2px #fff;
+  background-color: rgba(255, 255, 255, .4);
+  box-shadow: 0 0 10px #fff;
+}
+
+h1 {
+  margin: 0 0 32px;
+  font-size: 24px;
+}
+
+a.standard {
+	color: silver;
+}
+
+a.standard:hover{
+	color: white;
+}
+
+
+#hidden {
+	top: -33px;
+	right: 5px;
+	padding: 20px 0px 10px 0px;
+	position: absolute;
+  width: 2em;
+	background-color: rgba(255, 255, 255, .1);
+  color: #fff;
+  text-align: center;
+  transition: top 0.5s ease-out 0s;
+
+}
+
+#hidden:hover {
+		top: 0;
+}
+
+#container
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#header
+{
+	margin-top: 3%;
+	background-color: #cfcfcf;
+	border-radius: 4px;
+	padding: 16px;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, .1);
+}
+
+#wrapper
+{
+
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, .1);
+	margin-top: 20px;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+#content-wrapper
+{
+	width: 80%;
+	float: left;
+}
+
+#content
+{
+	float: left;
+	padding: 20px;
+	line-height: 1.6em;
+	overflow: hidden;
+}
+
+#sidebar-wrapper
+{
+	overflow: auto;
+	width: 20%;
+	float: left;
+}
+
+#sidebar
+{
+	float: left;
+	padding: 20px;
+}
+
+#footer
+{
+	float: left;
+	width: 100%;
+	margin: 20px 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .1);
+}
